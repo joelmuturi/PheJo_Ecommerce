@@ -1,7 +1,7 @@
 // require('dotenv').config();
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-// import { GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
-import { getDatabase } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+// import { GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+import { getDatabase } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js";
 
 import {
   getAuth,
@@ -12,17 +12,17 @@ import {
   getRedirectResult,
   signInWithPopup,
   signOut
-} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
-// import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+} from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+// import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBKb8TIcIJsLzW3F6EFnrn14eXZQxmVYg0",
-  authDomain: "boot-e873b.firebaseapp.com",
-  projectId: "boot-e873b",
-  storageBucket: "boot-e873b.appspot.com",
-  messagingSenderId: "79211905093",
-  appId: "1:79211905093:web:a18c28948f3fbb5997a32c",
-  measurementId: "G-0TKDGHC82J"
+  apiKey: "AIzaSyCbs5pnrGePbxNd9pkhXKkb6eTnyzqGnTo",
+  authDomain: "phejoe-65cfc.firebaseapp.com",
+  projectId: "phejoe-65cfc",
+  storageBucket: "phejoe-65cfc.appspot.com",
+  messagingSenderId: "1075754059473",
+  appId: "1:1075754059473:web:57dc9aa6b77d9355c927f0",
+  measurementId: "G-KSD482LRZE"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -199,6 +199,6 @@ const signInWithGoogle = () => {
   });
 
 
-}
+};
 signInWithGoogleButton.addEventListener('click', signInWithGoogle);
 
