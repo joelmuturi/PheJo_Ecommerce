@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta  http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <link rel="stylesheet" href="assets/css/all.css">
-         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="assets/css/all.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <section id="header">
@@ -14,62 +14,65 @@
                 <ul id="navbar">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a class="active" href="contact.html">Contact</a></li>
+                    <li><a  href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <span id="dashboard-link"></span>
                     <span id="login-link"></span>   
                     <span id="logout-link"></span>
-                    <li id="lg-bag"><a  href="cart.html"><i class="fa fa-bag-shopping"></i></a></li>
+                    <li id="lg-bag"><a class="active" href="cart.html"><i class="fa fa-bag-shopping"></i></a></li>
                     <a href="#" id="close"><i  class="fa fa-times"></i></a>
                 </ul>
-            </div>
+            </div> 
             <div id="mobile">
                 <a href="cart.html"><i class="fa fa-bag-shopping"></i></a>
                 <i id="bar" class="fa fa-outdent"></i>
                 </div>
         </section>
-        <section id="page-header" class="contact-header">
-            <h2>#letsTalk</h2>
-            <p>We're here to cater for your needs</p>
+        <section id="page-header" class="about-header">
+            <h2>#Carthere</h2>
+            <p>Cart away all our nice products</p>
         </section>
-        <section id="contact-details" class="section-pl">
-            <div class="details">
-                <span>GET IN TOUCH</span>
-                <h2>Visit one of our agency locations or contact us today</h2>
-                <h3>Head Office</h3>
+        <section id="cart" class="section-pl">
+            <table width="100%">
+                <th>
+                    <td>Remove</td>
+                    <td>Images</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </th>
+                <tbody>
+                    <tr></tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="card-add" class="section-pl">
+            <div id="coupon">
+                <h3>Apply Coupon</h3>
                 <div>
-                    <li>
-                        <i class="fa fa-map"></i>
-                        <p>Nakuru, Kenya</p>
-                    </li>
-                    <li>
-                        <i class="fa fa-envelope"></i>
-                        <p>officialjoelkaranja562@gmail.com</p>
-                    </li>
-                    <li>
-                        <i class="fa fa-phone-alt"></i>
-                        <p>+254797584209</p>
-                    </li>
-                    <li>
-                        <i class="fa fa-clock"></i>
-                        <p>Monday to Sunday | 8:00am to 8pm</p>
-                    </li>
+                    <input type="text" placeholder="Enter your coupon">
+                    <button class="normal">Apply</button>
                 </div>
             </div>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/dir/-0.2953458,36.078458/power+learn+project+location/@-0.7731212,35.8695084,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x182f17c341815e9b:0x75dbfd0bd034f43b!2m2!1d36.784954!2d-1.2508434?entry=ttu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="subtotal">
+                <h3>Cart totals</h3>
+                <table>
+                    <tr>
+                        <td>Cart subtotal</td>
+                        <td>$ 335</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong>$ 335</strong></td>
+                    </tr>
+                </table>
+                <button class="normal">Checkout now</button>
             </div>
-        </section>
-        <section id="form-details">
-            <form action="">
-                <span>LEAVE A MESSAGE</span>
-                <h2>We love to hear from you</h2>
-                <input type="text" placeholder="Your Name">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Subject">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <button class="normal">Submit</button>
-            </form>
         </section>
         <section id="newsletter" class="section-pl section-ml">
             <div class="newstext">
@@ -119,11 +122,11 @@
                 <p>Designed by Joel Muturi © 2023. All Rights Reserved</p>
             </div>
         </footer>
+    
         <script src="script.js"></script>
         <script type="module" defer src="checkuser.js"></script>
         <script type="module" src="logout.js"></script>
     </body>
     </html>
     
-        
-
+    
