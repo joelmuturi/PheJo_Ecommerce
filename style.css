@@ -41,7 +41,7 @@
     content: "";
     width: 30px;
     height: 2px;
-    background: #088178;
+    background: purple;
     position: absolute;
     bottom: -4px;
     left: 20px;
@@ -77,6 +77,117 @@
     font-weight: 700;
     cursor: pointer;
 }
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span{
+    color: #606063;
+}
+
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 25)
+}
+
+#product1 .pro .des .star{
+    padding-bottom: 0px;
+}
+
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color:purple;
+}
+
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #b2e2e0;
+    font-weight: 500;
+    color: purple;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
+}
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-image: url("banner.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4{
+    color: #fff;
+    font-size: 16px;
+}
+
+#banner h2{
+    color: #fff;
+    font-size: 30px;
+    padding:10px 0;
+}
+
+#banner h2 span{
+    color: #ef3;
+}
+
+#banner button:hover{
+    background-color: purple;
+    color: #fff;
+}
+
+
 
 #newsletter {
     display: flex;
@@ -203,7 +314,7 @@ footer .copyright{
 
 
 #page-header{
-    background-image: url("img/about/banner.png");
+    background-image: url("banner.jpg");
     width: 100%;
     height: 30vh;
     background-size: cover;
@@ -218,9 +329,12 @@ footer .copyright{
 #page-header p{
     color:white;
 }
-
 #page-header.about-header{
     background-image: url("banner.jpg");
+}
+
+#page-header.shop-header{
+    background-image: url("sbanner.png");
 }
 
 #about-head{
