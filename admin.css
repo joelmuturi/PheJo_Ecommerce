@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: beige;
+}
+h1{
+    text-align: center;
+    margin-top: 0;
+    color: burlywood;
+}
+#products-container{
+    width: 60%;
+    background-color: beige;
+    padding: 20px;
+    margin-right: 20px;
+}
+#add-product-container{
+    width: 40%;
+    background-color: beige;
+    padding: 20px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table th,
+table td{
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid beige;
+}
+button{
+    margin-top: 10px;
+    background-color: purple;
+    color: beige;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: purple;
+}
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+h2{
+    color: burlywood;
+}
