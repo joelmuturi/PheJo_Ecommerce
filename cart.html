@@ -1,79 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta  http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/all.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <section id="header">
-            <a href="index.html"><img src="cooltext438282989314169.png" class="logo" alt=""></a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="index.html"><img src="cooltext438282989314169.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <span id="dashboard-link"></span>
+                <span id="login-link"></span>   
+                <span id="logout-link"></span>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i  class="fa fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa-bag-shopping"></i></a>
+            <i id="bar" class="fa fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="page-header" class="cart-header">
+        <h2>#cartHere</h2>
+        <p>Cart away all our nice products</p>
+    </section>
+
+    <section id="cart" class="section-pl">
+        <table width="100%">
+            <thead>
+                <td>Remove</td>
+                <td>Images</td>
+                <td>Product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Subtotal</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa fa-times-circle"></i></a></td>
+                    <td><img src="Productimg/f1.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-regular fa-trash-can"></i></a></td>
+                    <td><img src="Productimg/f2.jpg" alt=""></td>
+                    <td>Patterned Shirts</td>
+                    <td>$140.13</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$140.13</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa fa-times-circle"></i></a></td>
+                    <td><img src="Productimg/f3.jpg" alt=""></td>
+                    <td>Traditional T-Shirts</td>
+                    <td>$74.93</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$74.93</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+    <section id="card-add" class="section-pl">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
             <div>
-                <ul id="navbar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a  href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <span id="dashboard-link"></span>
-                    <span id="login-link"></span>   
-                    <span id="logout-link"></span>
-                    <li id="lg-bag"><a class="active" href="cart.html"><i class="fa fa-bag-shopping"></i></a></li>
-                    <a href="#" id="close"><i  class="fa fa-times"></i></a>
-                </ul>
-            </div> 
-            <div id="mobile">
-                <a href="cart.html"><i class="fa fa-bag-shopping"></i></a>
-                <i id="bar" class="fa fa-outdent"></i>
-                </div>
-        </section>
-        <section id="page-header" class="cart-header">
-            <h2>#Carthere</h2>
-            <p>Cart away all our nice products</p>
-        </section>
-        <section id="cart" class="section-pl">
-            <table width="100%">
-                <th>
-                    <td>Remove</td>
-                    <td>Images</td>
-                    <td>Product</td>
-                    <td>Price</td>
-                    <td>Quantity</td>
-                    <td>Subtotal</td>
-                </th>
-                <tbody>
-                    <tr></tr>
-                </tbody>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$ 335</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$ 335</strong></td>
+                </tr>
             </table>
-        </section>
-        <section id="card-add" class="section-pl">
-            <div id="coupon">
-                <h3>Apply Coupon</h3>
-                <div>
-                    <input type="text" placeholder="Enter your coupon">
-                    <button class="normal">Apply</button>
-                </div>
-            </div>
-            <div id="subtotal">
-                <h3>Cart totals</h3>
-                <table>
-                    <tr>
-                        <td>Cart subtotal</td>
-                        <td>$ 335</td>
-                    </tr>
-                    <tr>
-                        <td>Shipping</td>
-                        <td>Free</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Total</strong></td>
-                        <td><strong>$ 335</strong></td>
-                    </tr>
-                </table>
-                <button class="normal">Checkout now</button>
-            </div>
-        </section>
+            <button class="normal">Proceed to Checkout</button>
+        </div>
+    </section>
         <section id="newsletter" class="section-pl section-ml">
             <div class="newstext">
                 <h4>Sign Up For Newsletter</h4>
@@ -84,6 +112,7 @@
                 <button class="normal">Sign Up</button>
             </div>
         </section>
+        
         <footer class="section-pl">
             <div class="col">
                 <img class="logo" src="cooltext438282989314169.png" alt="">
@@ -118,13 +147,17 @@
                 <a href="#"> Track My Order</a>
                 <a href="#"> Help</a>
             </div>
+                <div class="row">
+                    <img src="pay/app.jpg" alt="">
+                    <img src="pay/play.jpg" alt="">
+                </div>
             <div class="copyright">
                 <p>Designed by Joel Muturi © 2023. All Rights Reserved</p>
             </div>
         </footer>
     
         <script src="script.js"></script>
-        <script type="module" defer src="checkuser.js"></script>
+        <script type="module" src="checkuser.js"></script>
         <script type="module" src="logout.js"></script>
     </body>
     </html>
