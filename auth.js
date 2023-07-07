@@ -201,4 +201,14 @@ const signInWithGoogle = () => {
 
 };
 signInWithGoogleButton.addEventListener('click', signInWithGoogle);
+// Switch Up the Login and SignUp form
+signupButton.addEventListener("click", () => {
+  main.style.display = "none";
+  createacct.style.display = "block";
+});
+
+returnBtn.addEventListener("click", function () {
+  main.style.display = "block";
+  createacct.style.display = "none";
+});
 
