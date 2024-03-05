@@ -77,5 +77,6 @@ function dateBuilder(d) {
   
     return `${date}/${month}`;
   }
+   
 
   // Be aware that this free version of the API does not work in Production(that is hosted server) only locally for testing

@@ -94,7 +94,7 @@ createacctbtn.addEventListener("click", function () {
         const user = userCredential.user;
         // ...
         window.alert("Success! Account created.");
-        window.location = "./dashboard.html";
+        window.location = "shop.html";
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -119,7 +119,7 @@ submitButton.addEventListener("click", function () {
       const user = userCredential.user;
 
       window.alert("Success! Welcome back!");
-      window.location = "./dashboard.html";
+      window.location = "shop.html";
 
       // ...
     })
@@ -185,7 +185,7 @@ const signInWithGoogle = () => {
     // IdP data available using getAdditionalUserInfo(result)
     // alert(user.displayName);
     window.alert("Success! Welcome back " + user.displayName);
-    window.location = "./dashboard.html";
+    window.location = "shop.html";
     // ...
   }).catch((error) => {
     // Handle Errors here.

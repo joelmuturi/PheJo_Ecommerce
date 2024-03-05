@@ -13,18 +13,26 @@
             <div>
                 <ul id="navbar">
                     <li><a href="index.html">Home</a></li>
-                    <li><a class="active" href="shop.html">Shop</a></li>
+                    <li class="navbar-item">
+                        <a class="active" href="shop.html">Shop</a>
+                        <div class="dropdown-content">
+                            <a href="#">Fashion</a>
+                            <a href="#">Electronics</a>
+                            <a href="#">Shoes</a>
+                            <a href="#">Utensils </a>
+                        </div>
+                    </li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <span id="dashboard-link"></span>         
                     <span id="login-link"></span>   
                     <span id="logout-link"></span>
-                    <li id="lg-bag"><a  href="cart.html"><i class="fa fa-bag-shopping"></i></a></li>
-                    <a href="#" id="close"><i  class="fa fa-times"></i></a>
+                    <li id="lg-bag"><a  href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+                    <a href="shop.html" id="close"><i  class="fa fa-times"></i></a>
                 </ul>
             </div> 
             <div id="mobile">
-                <a href="cart.html"><i class="fa fa-bag-shopping"></i></a>
+                <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
                 <i id="bar" class="fa fa-outdent"></i>
                 </div>
         </section>
