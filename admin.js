@@ -48,7 +48,7 @@ let products = [
   }
 
   function deleteProduct(productId) {
-const index = product    s.findIndex(product => product.id === productId);
+const index = products.findIndex(product => product.id === productId);
     if (index !== -1) {
       products.splice(index, 1);
       renderProductList();

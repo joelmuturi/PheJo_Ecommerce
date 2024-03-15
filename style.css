@@ -76,7 +76,7 @@ button.white{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 80px;
+    padding: 0px 80px;
     background: gold;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;
@@ -154,7 +154,8 @@ button.white{
     width: 100%;
     background-size: cover;
     background-position: top 34% right 0;
-    padding: 0 80px;
+    padding-right: -200px;
+    margin-left: 100px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
